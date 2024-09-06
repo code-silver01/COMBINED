@@ -1,15 +1,9 @@
-let navbar = document.querySelector('.header .navbar');
-let menuBtn = document.querySelector('#menu-btn');
-let closeBtn = document.querySelector('#close-navbar');
-
-menuBtn.onclick = () =>{
-   navbar.classList.add('active');
-};
-
-closeBtn.onclick = () =>{
-    navbar.classList.remove('active');
- };
-
-window.onscroll = () =>{
-   navbar.classList.remove('active');
-};
+const loginsec=document.querySelector('.login-section')
+const loginlink=document.querySelector('.login-link')
+const registerlink=document.querySelector('.register-link')
+registerlink.addEventListener('click',()=>{
+    loginsec.classList.add('active')
+})
+loginlink.addEventListener('click',()=>{
+    loginsec.classList.remove('active')
+})
